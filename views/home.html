@@ -1,0 +1,17 @@
+<div class="page-header-sub">
+  <h2 class="page-title">Apps</h2>
+</div>
+
+<div class="container playlist">
+  <ul class="row">
+    <li ng-repeat="app in data" class="col-xs-12 col-sm-6">
+      <a href="#/{{app.app_id}}" class="app_tile">
+        <img ng-src="{{app.images.main}}" alt="{{app.description}}" />
+        <div class="description-box">
+          <h2>{{app.name}}</h2>
+          <p class="description">{{app.description}}</p>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>

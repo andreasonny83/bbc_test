@@ -1,0 +1,60 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="app"> <!--<![endif]-->
+<!--
+Copyright (c) 2015 andreasonny83. All rights reserved.
+-->
+	<head>
+		<base href="/">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>BBC app store</title>
+		<meta name="description" content="BBC App store">
+		<meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- build:css css/style.min.css -->
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<!-- endbuild -->
+	</head>
+	<body ng-controller="MainController">
+		<page-header></page-header>
+
+		<!-- Main view for templates -->
+		<div ng-view class="page">Loading...</div>
+
+		<!-- build:libs js/libs.js -->
+		<script type="text/javascript" src="js/nonangular/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!-- endbuild -->
+
+		<!-- build:angularlibs js/angularlibs.js -->
+		<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+		<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+		<!-- endbuild -->
+
+		<!-- build:appcomponents js/appcomponents.js -->
+		<script type="text/javascript" src="app/app.js"></script>
+		<script type="text/javascript" src="app/config.js"></script>
+		<script type="text/javascript" src="components/directives/page_header.directive.js"></script>
+		<!-- endbuild -->
+
+		<!-- build:mainapp js/mainapp.js -->
+		<script type="text/javascript" src="app/controllers.js"></script>
+		<!-- endbuild -->
+
+		<!-- templates from $templateCache -->
+		<!-- build:templates -->
+		<!-- endbuild -->
+
+		<script>
+		// remove the no-js class if JavaScript is enabled
+		if ( document.documentElement.classList.contains( 'no-js' ) ) {
+			document.documentElement.classList.remove( 'no-js' );
+		}
+		</script>
+	</body>
+</html>

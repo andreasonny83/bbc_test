@@ -1,0 +1,23 @@
+{
+  "name": "bbc apps",
+  "version": "1.0.0",
+  "authors": [
+    "SonnY <andreasonny83@gmail.com>"
+  ],
+  "description": "bbc app store",
+  "main": "app.js",
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "bootstrap": "~3.3.5"
+  }
+}
